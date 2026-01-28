@@ -1,12 +1,12 @@
 CREATE TABLE `Kunde` (
-  `Kunde_ID` PK INT,
+  `Kunde_ID` PRIMARY KEY INT,
   `Navn` VARCHAR,
   `Passord` VARCHAR,
   `Epost` VARCHAR UNIQUE NOT NULL
 );
 
 CREATE TABLE `Bil` (
-  `Bil_ID` PK INT,
+  `Bil_ID` PRIMARY KEY INT,
   `Bil_Merke` VARCHAR,
   `Bil_Modell` VARCHAR,
   `Årsmodell` INT,
@@ -15,9 +15,9 @@ CREATE TABLE `Bil` (
 );
 
 CREATE TABLE `Utleieavtale` (
-  `Avtale_ID` PK INT,
-  `Kunde_ID` FK INT NOT NULL,
-  `Bil_ID` FK INT NOT NULL,
+  `Avtale_ID` PRIMARY KEY INT,
+  `Kunde_ID` FOREIGN KEY INT NOT NULL,
+  `Bil_ID` FOREIGN KEY INT NOT NULL,
   `StartDato` DATE,
   `SluttDato` DATE,
   `Totalpris` DECIMAL NOT NULL,
