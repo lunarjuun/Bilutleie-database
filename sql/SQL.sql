@@ -19,7 +19,7 @@ CREATE TABLE `Utleieavtale` (
   `Kunde_ID` INT NOT NULL,
   `Bil_ID` INT NOT NULL,
   FOREIGN KEY (Kunde_ID) REFERENCES Kunde(Kunde_ID),
-  FOREIGN KEY (Bil_ID) REFERENCES Bil(Bil_ID)
+  FOREIGN KEY (Bil_ID) REFERENCES Bil(Bil_ID),
   `StartDato` DATE,
   `SluttDato` DATE,
   `Totalpris` DECIMAL NOT NULL,
