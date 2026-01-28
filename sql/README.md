@@ -1,1 +1,0 @@
-Her ligger SQL-script.
