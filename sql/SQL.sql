@@ -1,3 +1,5 @@
+-- bittelitt usikker om dette engang er riktig, har ikke gjort mye database selv, og har spurt AI om tilbakemelding. burde være grei ihvertfall.
+
 CREATE TABLE `Kunde` (
   `Kunde_ID` INT PRIMARY KEY,
   `Navn` VARCHAR(50),
